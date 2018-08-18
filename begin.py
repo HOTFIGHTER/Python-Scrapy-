@@ -1,3 +1,3 @@
 # coding=utf-8
 from scrapy import cmdline
-cmdline.execute("scrapy crawl BaiduSpider".split())
+cmdline.execute("scrapy crawl DoubanSpider".split())
