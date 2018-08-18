@@ -37,3 +37,13 @@ class DoubanBookItem(scrapy.Item):
     ratings = scrapy.Field()  # 评分
     author = scrapy.Field()  # 作者
     content = scrapy.Field()
+
+class DoubanMovieCommentItem(scrapy.Item):
+    useful_num = scrapy.Field()      # 多少人评论有用
+    no_help_num = scrapy.Field()     # 多少人评论无用
+    people = scrapy.Field()          # 评论者
+    people_url = scrapy.Field()      # 评论者页面
+    star = scrapy.Field()            # 评分
+    comment = scrapy.Field()         # 评论
+    title = scrapy.Field()           # 标题
+    comment_page_url = scrapy.Field()# 当前页
